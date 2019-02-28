@@ -8,6 +8,7 @@
  */
 
 import React, { Component } from 'react';
+import { StatusBar, View, Platform } from 'react-native';
 import eStyleSheet from 'react-native-extended-stylesheet';
 import createAppContainer from './src/Router';
 import firebase from '@firebase/app';
@@ -44,6 +45,12 @@ export default class App extends Component {
 
 	render() {
 		const AppContainer = createAppContainer();
-		return <AppContainer />;
+		return (
+			<View style={{ flex: 1 }}>
+				{Platform.OS === 'android' && <StatusBar backgroundColor="#7D9976" barStyle="light-content" />}
+
+				<AppContainer />
+			</View>
+		);
 	}
 }

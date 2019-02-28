@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, Dimensions } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Dimensions, Platform, StatusBar } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Styles from './Styles';
 import firebase from '@firebase/app';
 import '@firebase/auth';
 import '@firebase/database';
+
 const BTN_WIDTH = Dimensions.get('window').width / 3.75;
 const PADDING = (Dimensions.get('window').width - BTN_WIDTH * 3) / 6;
 
@@ -84,8 +85,10 @@ export default class LandingScreen extends Component {
 	};
 
 	render() {
+		const fontsize = Platform.OS === 'ios' ? 20 : 16;
 		return (
 			<View style={Styles.container}>
+				<StatusBar backgroundColor="#7D4976" barStyle="light-content" />
 				<ScrollView>
 					<View style={{ flexDirection: 'row', justifyContent: 'space-around', paddingVertical: 24 }}>
 						<LinearGradient colors={['#000', '#8F55A3']} style={{ alignItems: 'center', borderRadius: 5 }}>
@@ -99,7 +102,14 @@ export default class LandingScreen extends Component {
 								}}
 								onPress={() => this.handleBtnPress(0)}
 							>
-								<Text style={{ fontSize: 20, fontWeight: '600', color: '#fff', textAlign: 'center' }}>
+								<Text
+									style={{
+										fontSize: fontsize,
+										fontWeight: '600',
+										color: '#fff',
+										textAlign: 'center',
+									}}
+								>
 									Dash Board
 								</Text>
 							</TouchableOpacity>
@@ -116,7 +126,14 @@ export default class LandingScreen extends Component {
 								}}
 								onPress={() => this.handleBtnPress(1)}
 							>
-								<Text style={{ fontSize: 20, fontWeight: '600', color: '#fff', textAlign: 'center' }}>
+								<Text
+									style={{
+										fontSize: fontsize,
+										fontWeight: '600',
+										color: '#fff',
+										textAlign: 'center',
+									}}
+								>
 									Donee
 								</Text>
 							</TouchableOpacity>
@@ -133,7 +150,14 @@ export default class LandingScreen extends Component {
 								}}
 								onPress={() => this.handleBtnPress(2)}
 							>
-								<Text style={{ fontSize: 20, fontWeight: '600', color: '#fff', textAlign: 'center' }}>
+								<Text
+									style={{
+										fontSize: fontsize,
+										fontWeight: '600',
+										color: '#fff',
+										textAlign: 'center',
+									}}
+								>
 									Donor
 								</Text>
 							</TouchableOpacity>
@@ -152,7 +176,14 @@ export default class LandingScreen extends Component {
 								}}
 								onPress={() => this.handleBtnPress(3)}
 							>
-								<Text style={{ fontSize: 20, fontWeight: '600', color: '#fff', textAlign: 'center' }}>
+								<Text
+									style={{
+										fontSize: fontsize,
+										fontWeight: '600',
+										color: '#fff',
+										textAlign: 'center',
+									}}
+								>
 									Requests
 								</Text>
 							</TouchableOpacity>
@@ -170,7 +201,14 @@ export default class LandingScreen extends Component {
 								}}
 								onPress={() => this.handleBtnPress(4)}
 							>
-								<Text style={{ fontSize: 20, fontWeight: '600', color: '#fff', textAlign: 'center' }}>
+								<Text
+									style={{
+										fontSize: fontsize,
+										fontWeight: '600',
+										color: '#fff',
+										textAlign: 'center',
+									}}
+								>
 									Volunteer
 								</Text>
 							</TouchableOpacity>
@@ -187,7 +225,14 @@ export default class LandingScreen extends Component {
 								}}
 								onPress={() => this.handleBtnPress(5)}
 							>
-								<Text style={{ fontSize: 20, fontWeight: '600', color: '#fff', textAlign: 'center' }}>
+								<Text
+									style={{
+										fontSize: fontsize,
+										fontWeight: '600',
+										color: '#fff',
+										textAlign: 'center',
+									}}
+								>
 									Reports
 								</Text>
 							</TouchableOpacity>
@@ -207,7 +252,14 @@ export default class LandingScreen extends Component {
 								}}
 								onPress={() => this.handleBtnPress(6)}
 							>
-								<Text style={{ fontSize: 20, fontWeight: '600', color: '#fff', textAlign: 'center' }}>
+								<Text
+									style={{
+										fontSize: fontsize,
+										fontWeight: '600',
+										color: '#fff',
+										textAlign: 'center',
+									}}
+								>
 									Assets
 								</Text>
 							</TouchableOpacity>
@@ -224,7 +276,14 @@ export default class LandingScreen extends Component {
 								}}
 								onPress={() => this.handleBtnPress(7)}
 							>
-								<Text style={{ fontSize: 20, fontWeight: '600', color: '#fff', textAlign: 'center' }}>
+								<Text
+									style={{
+										fontSize: fontsize,
+										fontWeight: '600',
+										color: '#fff',
+										textAlign: 'center',
+									}}
+								>
 									Donation Camp
 								</Text>
 							</TouchableOpacity>
@@ -241,7 +300,14 @@ export default class LandingScreen extends Component {
 								}}
 								onPress={() => this.handleBtnPress(8)}
 							>
-								<Text style={{ fontSize: 20, fontWeight: '600', color: '#fff', textAlign: 'center' }}>
+								<Text
+									style={{
+										fontSize: fontsize,
+										fontWeight: '600',
+										color: '#fff',
+										textAlign: 'center',
+									}}
+								>
 									Funds
 								</Text>
 							</TouchableOpacity>
@@ -268,7 +334,14 @@ export default class LandingScreen extends Component {
 								}}
 								onPress={() => this.handleBtnPress(9)}
 							>
-								<Text style={{ fontSize: 20, fontWeight: '600', color: '#fff', textAlign: 'center' }}>
+								<Text
+									style={{
+										fontSize: fontsize,
+										fontWeight: '600',
+										color: '#fff',
+										textAlign: 'center',
+									}}
+								>
 									Pay
 								</Text>
 							</TouchableOpacity>
