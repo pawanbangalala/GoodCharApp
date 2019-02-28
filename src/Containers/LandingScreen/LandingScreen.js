@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, Dimensions, Platform, StatusBar } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Dimensions, Platform } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Styles from './Styles';
 import firebase from '@firebase/app';
@@ -88,7 +88,6 @@ export default class LandingScreen extends Component {
 		const fontsize = Platform.OS === 'ios' ? 20 : 16;
 		return (
 			<View style={Styles.container}>
-				<StatusBar backgroundColor="#7D4976" barStyle="light-content" />
 				<ScrollView>
 					<View style={{ flexDirection: 'row', justifyContent: 'space-around', paddingVertical: 24 }}>
 						<LinearGradient colors={['#000', '#8F55A3']} style={{ alignItems: 'center', borderRadius: 5 }}>
@@ -110,7 +109,7 @@ export default class LandingScreen extends Component {
 										textAlign: 'center',
 									}}
 								>
-									Dash Board
+									DashBoard
 								</Text>
 							</TouchableOpacity>
 						</LinearGradient>

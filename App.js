@@ -47,7 +47,7 @@ export default class App extends Component {
 		const AppContainer = createAppContainer();
 		return (
 			<View style={{ flex: 1 }}>
-				{Platform.OS === 'android' && <StatusBar backgroundColor="#7D9976" barStyle="light-content" />}
+				{Platform.OS === 'android' && <StatusBar backgroundColor="#7D4976" barStyle="light-content" />}
 
 				<AppContainer />
 			</View>
