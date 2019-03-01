@@ -60,7 +60,6 @@
 		CBB7264B63C5427DB31B7075 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D012DD66267E432C9CD9F185 /* Zocial.ttf */; };
 		DF5000F8EDF7436D892E1FFE /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB676F0E3174553B1042C44 /* Entypo.ttf */; };
 		E3E3FC3D09D04D34B91B55C2 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E4D2D239C49EAAA05E6E7 /* FontAwesome.ttf */; };
-		E53DFAD718EA44F396C13DFB /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D2FC063F0047179B547085 /* libRCTVideo.a */; };
 		E6F5FB9E94B446E6A7BCA972 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3841C9E2ACD241449C99C7E8 /* MaterialCommunityIcons.ttf */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
@@ -521,7 +520,6 @@
 				5F5AF93639C449169CE7B4DC /* libBVLinearGradient.a in Frameworks */,
 				73DBF1BDD9454D31B228AA32 /* libRNVectorIcons.a in Frameworks */,
 				9B877C57F8BB47B49FBA9F8E /* libReactNativePermissions.a in Frameworks */,
-				E53DFAD718EA44F396C13DFB /* libRCTVideo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

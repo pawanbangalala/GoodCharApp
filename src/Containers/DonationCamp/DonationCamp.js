@@ -28,7 +28,7 @@ export default class DonationCamp extends Component {
 			recording: false,
 			qr_code_result: '',
 			playing: false,
-			authorized_donee: false,
+			authorized_donee: true,
 			camps: [],
 			projects: [],
 		};
@@ -116,7 +116,7 @@ export default class DonationCamp extends Component {
 			recording: false,
 			qr_code_result: '',
 			playing: false,
-			authorized_donee: false,
+			authorized_donee: true,
 		});
 
 		//this.refs.camp.value = '';
@@ -312,23 +312,24 @@ export default class DonationCamp extends Component {
 						>
 							<TouchableWithoutFeedback
 								onPress={() => {
-									FingerprintScanner.isSensorAvailable()
-										.then(biometryType => {
-											console.log('sensor available  press');
-											FingerprintScanner.authenticate({
-												description: 'Scan your fingerprint on the device scanner to continue',
-											})
-												.then(() => {
-													Alert.alert('Authenticated successfully');
-													this.setState({ authorized_donee: true });
-												})
-												.catch(error => {
-													Alert.alert('Authenticated failed');
-													this.setState({ authorized_donee: true });
-												});
-										})
-										.catch(error => console.log('sensor error'));
-									console.log('onlong press');
+									// FingerprintScanner.isSensorAvailable()
+									// 	.then(biometryType => {
+									// 		console.log('sensor available  press');
+									// 		FingerprintScanner.authenticate({
+									// 			description: 'Scan your fingerprint on the device scanner to continue',
+									// 		})
+									// 			.then(() => {
+									// 				Alert.alert('Authenticated successfully');
+									// 				this.setState({ authorized_donee: true });
+									// 			})
+									// 			.catch(error => {
+									// 				Alert.alert('Authenticated failed');
+									// 				this.setState({ authorized_donee: true });
+									// 			});
+									// 	})
+									// 	.catch(error => console.log('sensor error'));
+									// console.log('onlong press');
+									Alert.alert('Authenticated successfully');
 								}}
 							>
 								<Icon name="fingerprint" type="material-community" color="#333333" size={80} />
